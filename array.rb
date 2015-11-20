@@ -17,4 +17,8 @@ class Array
 
     raise NoMethodError, "Methode non-definie `#{id}' pour #{self}", caller(1)
   end
+  
+  def selectionner_avecetmethod_missing()
+    puts "Missing here"
+  end
 end
